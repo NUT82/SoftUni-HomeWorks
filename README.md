@@ -1,2 +1,2 @@
 # SoftUni-HomeWorks
-This is my first steps in coding
+This is my first steps in coding C#
