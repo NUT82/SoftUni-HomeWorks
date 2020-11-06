@@ -39,27 +39,20 @@ namespace LadyBugs
                     direction = -1; //if direction is "left" 1 1 1
                 }
                 int flyLength = int.Parse(currCommand[2]) * direction;
-                int newLadyBugIndex = ladyBugIndex + flyLength;
+                
                 if ((fieldOfLadybugs.Length > ladyBugIndex && ladyBugIndex >= 0) && fieldOfLadybugs[ladyBugIndex] == 1)
                 {
-                    while (true)
+                    fieldOfLadybugs[ladyBugIndex] = 0;
+                    int newLadyBugIndex = ladyBugIndex + flyLength;
+                    while (fieldOfLadybugs.Length > newLadyBugIndex && newLadyBugIndex >= 0)
                     {
-                        if (fieldOfLadybugs.Length > newLadyBugIndex && newLadyBugIndex >= 0)
+                        if (fieldOfLadybugs[newLadyBugIndex] == 1)
                         {
-                            fieldOfLadybugs[ladyBugIndex] = 0;
-                            if (fieldOfLadybugs[newLadyBugIndex] == 1)
-                            {
-                                newLadyBugIndex += flyLength;
-                            }
-                            else
-                            {
-                                fieldOfLadybugs[newLadyBugIndex] = 1;
-                                break;
-                            }
+                            newLadyBugIndex += flyLength;
                         }
                         else
                         {
-                            fieldOfLadybugs[ladyBugIndex] = 0; //fly away
+                            fieldOfLadybugs[newLadyBugIndex] = 1;
                             break;
                         }
                     }
