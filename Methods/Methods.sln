@@ -25,27 +25,33 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MultiplyEvensByOdds", "Mult
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MathOperations", "MathOperations\MathOperations.csproj", "{3F0AFF25-FB8E-444C-A6BD-46818A806B88}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmallestOfThreeNumbers", "SmallestOfThreeNumbers\SmallestOfThreeNumbers.csproj", "{A21968E5-E41A-4D7B-8813-D746F2D1CB60}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmallestOfThreeNumbers", "SmallestOfThreeNumbers\SmallestOfThreeNumbers.csproj", "{A21968E5-E41A-4D7B-8813-D746F2D1CB60}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VowelsCount", "VowelsCount\VowelsCount.csproj", "{E2BB63FE-52D5-4A0C-80DC-BE76898CCA96}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VowelsCount", "VowelsCount\VowelsCount.csproj", "{E2BB63FE-52D5-4A0C-80DC-BE76898CCA96}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CharactersInRange", "CharactersInRange\CharactersInRange.csproj", "{386E48E2-CEE3-4448-B1A4-BEF1895E7A17}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CharactersInRange", "CharactersInRange\CharactersInRange.csproj", "{386E48E2-CEE3-4448-B1A4-BEF1895E7A17}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PasswordValidator", "PasswordValidator\PasswordValidator.csproj", "{90EBA0CB-C3C8-4679-8F76-CCD9C40C4D6E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PasswordValidator", "PasswordValidator\PasswordValidator.csproj", "{90EBA0CB-C3C8-4679-8F76-CCD9C40C4D6E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddAndSubtract", "AddAndSubtract\AddAndSubtract.csproj", "{0BDEEC31-7CA1-42E9-9957-4795439CFF9D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AddAndSubtract", "AddAndSubtract\AddAndSubtract.csproj", "{0BDEEC31-7CA1-42E9-9957-4795439CFF9D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiddleCharacters", "MiddleCharacters\MiddleCharacters.csproj", "{245F5DCC-3D05-48D4-82A3-1E16B46395FC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MiddleCharacters", "MiddleCharacters\MiddleCharacters.csproj", "{245F5DCC-3D05-48D4-82A3-1E16B46395FC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NxNMatrix", "NxNMatrix\NxNMatrix.csproj", "{463A4691-3702-401A-8B10-E982054E688C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NxNMatrix", "NxNMatrix\NxNMatrix.csproj", "{463A4691-3702-401A-8B10-E982054E688C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactorialDivision", "FactorialDivision\FactorialDivision.csproj", "{BC7CA00F-28EA-4723-ADA6-04F637641D38}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FactorialDivision", "FactorialDivision\FactorialDivision.csproj", "{BC7CA00F-28EA-4723-ADA6-04F637641D38}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PalindromeIntegers", "PalindromeIntegers\PalindromeIntegers.csproj", "{87EE7926-CE90-4FF1-B6F0-F4CC3E1A607C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PalindromeIntegers", "PalindromeIntegers\PalindromeIntegers.csproj", "{87EE7926-CE90-4FF1-B6F0-F4CC3E1A607C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TopNumber", "TopNumber\TopNumber.csproj", "{64EEDC94-E220-42EC-8B08-D89E2C5329AC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TopNumber", "TopNumber\TopNumber.csproj", "{64EEDC94-E220-42EC-8B08-D89E2C5329AC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayManipulator", "ArrayManipulator\ArrayManipulator.csproj", "{60EFC889-B3C4-4729-BD26-B42BD5931398}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArrayManipulator", "ArrayManipulator\ArrayManipulator.csproj", "{60EFC889-B3C4-4729-BD26-B42BD5931398}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataTypes", "DataTypes\DataTypes.csproj", "{D3921A4E-3851-4C26-BB2F-4EC1EF14B564}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CenterPoint", "CenterPoint\CenterPoint.csproj", "{A2EF4C0B-9048-4DF5-9391-51B8FB4F9D0C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LongerLine", "LongerLine\LongerLine.csproj", "{09911450-966C-41E6-8FF2-C847DE78C982}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -141,6 +147,18 @@ Global
 		{60EFC889-B3C4-4729-BD26-B42BD5931398}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{60EFC889-B3C4-4729-BD26-B42BD5931398}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{60EFC889-B3C4-4729-BD26-B42BD5931398}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3921A4E-3851-4C26-BB2F-4EC1EF14B564}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3921A4E-3851-4C26-BB2F-4EC1EF14B564}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3921A4E-3851-4C26-BB2F-4EC1EF14B564}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3921A4E-3851-4C26-BB2F-4EC1EF14B564}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2EF4C0B-9048-4DF5-9391-51B8FB4F9D0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2EF4C0B-9048-4DF5-9391-51B8FB4F9D0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2EF4C0B-9048-4DF5-9391-51B8FB4F9D0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2EF4C0B-9048-4DF5-9391-51B8FB4F9D0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09911450-966C-41E6-8FF2-C847DE78C982}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09911450-966C-41E6-8FF2-C847DE78C982}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09911450-966C-41E6-8FF2-C847DE78C982}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09911450-966C-41E6-8FF2-C847DE78C982}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
