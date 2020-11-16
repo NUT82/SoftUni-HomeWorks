@@ -14,7 +14,7 @@ namespace EasterShop
 
             while (command != "Close")
             {
-                int eggs = 0;
+                int eggs;
                 if (command == "Buy")
                 {
                     eggs = int.Parse(Console.ReadLine());
