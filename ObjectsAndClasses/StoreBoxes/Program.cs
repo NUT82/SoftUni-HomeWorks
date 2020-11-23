@@ -64,7 +64,7 @@ namespace StoreBoxes
         internal void ToSpecialFormat()
         {
             Console.WriteLine(this.SerialNumber);
-            Console.WriteLine($"-- {this.ItemName} – ${this.PriceForBox / this.ItemQuantity:F2}: {this.ItemQuantity}");
+            Console.WriteLine($"-- {this.ItemName} - ${this.PriceForBox / this.ItemQuantity:F2}: {this.ItemQuantity}");
             Console.WriteLine($"-- ${this.PriceForBox:F2}");
         }
     }
