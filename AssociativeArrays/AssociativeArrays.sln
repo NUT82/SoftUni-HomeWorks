@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompanyUsers", "CompanyUser
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ForceBook", "ForceBook\ForceBook.csproj", "{B9D3699D-B521-4DD4-8497-56BB74215FAE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoftUniExamResults", "SoftUniExamResults\SoftUniExamResults.csproj", "{2081C3D6-AD8F-4318-ABAF-E729FC8DED57}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +95,10 @@ Global
 		{B9D3699D-B521-4DD4-8497-56BB74215FAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B9D3699D-B521-4DD4-8497-56BB74215FAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B9D3699D-B521-4DD4-8497-56BB74215FAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2081C3D6-AD8F-4318-ABAF-E729FC8DED57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2081C3D6-AD8F-4318-ABAF-E729FC8DED57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2081C3D6-AD8F-4318-ABAF-E729FC8DED57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2081C3D6-AD8F-4318-ABAF-E729FC8DED57}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
