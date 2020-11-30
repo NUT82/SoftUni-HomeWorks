@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Collections.Immutable;
 using System.Linq;
-using System.Security.Cryptography.X509Certificates;
 
 namespace Snowwhite
 {
@@ -10,7 +8,7 @@ namespace Snowwhite
     {
         static void Main(string[] args)
         {
-            Dictionary<string, List<Dwarf>> dwarfs = new Dictionary<string, List<Dwarf>>(); //<color, <name, Dwarf>>
+            Dictionary<string, SortedSet<Dwarf>> dwarfs = new Dictionary<string, SortedSet<Dwarf>>(); //<color, <name, Dwarf>>
             string command = Console.ReadLine();
             while (command != "Once upon a time")
             {
@@ -22,9 +20,9 @@ namespace Snowwhite
                 {
                     if (dwarfs[hatColor].Any(n => n.Name == name))
                     {
-                        if (dwarfs[hatColor].Find(n => n.Name == name).Physics < physics)
+                        if (dwarfs[hatColor].Single(n => n.Name == name).Physics < physics)
                         {
-                            dwarfs[hatColor].Find(n => n.Name == name).Physics = physics;
+                            dwarfs[hatColor].Single(n => n.Name == name).Physics = physics;
                         }
                     }
                     else
@@ -34,24 +32,19 @@ namespace Snowwhite
                 }
                 else
                 {
-                    dwarfs.Add(hatColor, new List<Dwarf>() { dwarf });
+                    dwarfs.Add(hatColor, new SortedSet<Dwarf>() { dwarf });
                 }
 
                 command = Console.ReadLine();
             }
 
 
-            foreach (var item in dwarfs.Values.OrderByDescending(x => x[0].Physics).ThenByDescending(h => h.Count()))
+            foreach (var dwarf in dwarfs.Values)
             {
-                foreach (var ddd in item.OrderByDescending(x => x.Physics).ThenByDescending(x => item.Count()))
+                foreach (var item in dwarf)
                 {
-                    Console.WriteLine($"({ddd.HatColor}) {ddd.Name} <-> {ddd.Physics}");
+                    Console.WriteLine($"({item.HatColor}) {item.Name} <-> {item.Physics}");
                 }
-                //for (int i = 0; i < item.Count; i++)
-                //{
-                //    Console.WriteLine($"({item[i].HatColor}) {item[i].Name} <-> {item[i].Physics}");
-                //}
-                
             }
 
             //Console.WriteLine($"({dwarf.HatColor}) {dwarf.Name} <-> {dwarf.Physics}");
@@ -68,6 +61,14 @@ namespace Snowwhite
             Name = name;
             HatColor = hatColor;
             Physics = physics;
+        }
+    }
+
+    public class DwarfCompare : IComparer<Dwarf>
+    {
+        public int Compare(Dwarf x, Dwarf y)
+        {
+            return x.Physics.CompareTo(y.Physics);
         }
     }
 }
