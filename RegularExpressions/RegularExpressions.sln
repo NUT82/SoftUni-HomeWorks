@@ -3,23 +3,31 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30717.126
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MatchFullName", "MatchFullName\MatchFullName.csproj", "{41A9C928-BEF2-4975-947F-BBAE4CBDE9CF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MatchFullName", "MatchFullName\MatchFullName.csproj", "{41A9C928-BEF2-4975-947F-BBAE4CBDE9CF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MatchPhoneNumber", "MatchPhoneNumber\MatchPhoneNumber.csproj", "{126EDDB8-28BE-4496-BC9D-81B6E8D063D9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MatchPhoneNumber", "MatchPhoneNumber\MatchPhoneNumber.csproj", "{126EDDB8-28BE-4496-BC9D-81B6E8D063D9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MatchDates", "MatchDates\MatchDates.csproj", "{FDF4687A-1357-4B8B-B3F0-4488A8106A1F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MatchDates", "MatchDates\MatchDates.csproj", "{FDF4687A-1357-4B8B-B3F0-4488A8106A1F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Furniture", "Furniture\Furniture.csproj", "{9FB3C86E-C790-4DA1-857E-B2CB3CA353E0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Furniture", "Furniture\Furniture.csproj", "{9FB3C86E-C790-4DA1-857E-B2CB3CA353E0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Race", "Race\Race.csproj", "{CB26267B-7FFF-4924-B472-18FC915D9B00}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Race", "Race\Race.csproj", "{CB26267B-7FFF-4924-B472-18FC915D9B00}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoftUniBarIncome", "SoftUniBarIncome\SoftUniBarIncome.csproj", "{C985639E-076D-4548-9160-85D80BEB80D2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SoftUniBarIncome", "SoftUniBarIncome\SoftUniBarIncome.csproj", "{C985639E-076D-4548-9160-85D80BEB80D2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StarEnigma", "StarEnigma\StarEnigma.csproj", "{E8333E94-B724-42FD-9B3B-D7B18DD6E6E6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StarEnigma", "StarEnigma\StarEnigma.csproj", "{E8333E94-B724-42FD-9B3B-D7B18DD6E6E6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetherRealms", "NetherRealms\NetherRealms.csproj", "{A56EABD0-E0EA-4994-AC68-3AA9B1E906DE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetherRealms", "NetherRealms\NetherRealms.csproj", "{A56EABD0-E0EA-4994-AC68-3AA9B1E906DE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtractEmails", "ExtractEmails\ExtractEmails.csproj", "{8CF431CB-9B12-4FB7-987E-B307E1ED5A87}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExtractEmails", "ExtractEmails\ExtractEmails.csproj", "{8CF431CB-9B12-4FB7-987E-B307E1ED5A87}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinningTicket", "WinningTicket\WinningTicket.csproj", "{43836859-67BE-4946-832A-F17173474AA6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RageQuit", "RageQuit\RageQuit.csproj", "{D3C7DF80-3149-4B16-B64F-91EB8668F1C0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PostOffice", "PostOffice\PostOffice.csproj", "{54AE3DE1-1268-4061-B490-7C5F15C0B511}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Santa'sSecretHelper", "Santa'sSecretHelper\Santa'sSecretHelper.csproj", "{CBA2A4B9-D511-4CD3-B016-2B94CDAC7686}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +71,22 @@ Global
 		{8CF431CB-9B12-4FB7-987E-B307E1ED5A87}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8CF431CB-9B12-4FB7-987E-B307E1ED5A87}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8CF431CB-9B12-4FB7-987E-B307E1ED5A87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43836859-67BE-4946-832A-F17173474AA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43836859-67BE-4946-832A-F17173474AA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43836859-67BE-4946-832A-F17173474AA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43836859-67BE-4946-832A-F17173474AA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3C7DF80-3149-4B16-B64F-91EB8668F1C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3C7DF80-3149-4B16-B64F-91EB8668F1C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3C7DF80-3149-4B16-B64F-91EB8668F1C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3C7DF80-3149-4B16-B64F-91EB8668F1C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54AE3DE1-1268-4061-B490-7C5F15C0B511}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54AE3DE1-1268-4061-B490-7C5F15C0B511}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54AE3DE1-1268-4061-B490-7C5F15C0B511}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54AE3DE1-1268-4061-B490-7C5F15C0B511}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBA2A4B9-D511-4CD3-B016-2B94CDAC7686}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBA2A4B9-D511-4CD3-B016-2B94CDAC7686}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBA2A4B9-D511-4CD3-B016-2B94CDAC7686}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBA2A4B9-D511-4CD3-B016-2B94CDAC7686}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
