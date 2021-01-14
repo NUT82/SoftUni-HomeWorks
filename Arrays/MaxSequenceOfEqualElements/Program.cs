@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Linq;
 
 namespace MaxSequenceOfEqualElements
@@ -11,7 +11,7 @@ namespace MaxSequenceOfEqualElements
             int[] arrayOfIntegers = Console.ReadLine().Split().Select(int.Parse).ToArray();
             int counterOfEqualElements = 1;
             int maxCounterOfEqualElements = 1;
-            int equalElement = -1;
+            string equalElement = "";
             for (int i = 1; i < arrayOfIntegers.Length; i++)
             {
                 if (arrayOfIntegers[i] == arrayOfIntegers[i - 1])
@@ -20,7 +20,7 @@ namespace MaxSequenceOfEqualElements
                     if (counterOfEqualElements > maxCounterOfEqualElements)
                     {
                         maxCounterOfEqualElements = counterOfEqualElements;
-                        equalElement = arrayOfIntegers[i - 1];
+                        equalElement = arrayOfIntegers[i - 1].ToString();
                     }
                 }
                 else
@@ -28,9 +28,9 @@ namespace MaxSequenceOfEqualElements
                     counterOfEqualElements = 1;
                 }
             }
-            if (equalElement < 0)
+            if (equalElement == "")
             {
-                equalElement = arrayOfIntegers[0];
+                equalElement = arrayOfIntegers[0].ToString();
                 maxCounterOfEqualElements = counterOfEqualElements;
             }
             for (int i = 0; i < maxCounterOfEqualElements; i++)
