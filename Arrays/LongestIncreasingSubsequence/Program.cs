@@ -45,6 +45,7 @@ namespace LongestIncreasingSubsequence
                 }
             }
             Console.WriteLine(string.Join(" ", longestArrayOfIncSub));
+
         }
     }
 }
