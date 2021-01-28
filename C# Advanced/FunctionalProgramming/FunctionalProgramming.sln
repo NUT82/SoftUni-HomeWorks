@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SortEvenNumbers", "SortEvenNumbers\SortEvenNumbers.csproj", "{AE01D494-CC71-43EB-9D3A-607A9D33B3AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SumNumbers", "SumNumbers\SumNumbers.csproj", "{95500F89-CD1C-4818-B99C-0EC85262ECB1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AE01D494-CC71-43EB-9D3A-607A9D33B3AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE01D494-CC71-43EB-9D3A-607A9D33B3AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE01D494-CC71-43EB-9D3A-607A9D33B3AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE01D494-CC71-43EB-9D3A-607A9D33B3AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95500F89-CD1C-4818-B99C-0EC85262ECB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95500F89-CD1C-4818-B99C-0EC85262ECB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95500F89-CD1C-4818-B99C-0EC85262ECB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95500F89-CD1C-4818-B99C-0EC85262ECB1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C8663E12-0048-4E19-B6F9-60802E07847F}
+	EndGlobalSection
+EndGlobal
