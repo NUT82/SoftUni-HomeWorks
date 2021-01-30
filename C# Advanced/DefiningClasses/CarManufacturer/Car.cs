@@ -13,7 +13,7 @@ namespace CarManufacturer
             Model = "Golf";
             Year = 2025;
             FuelQuantity = 200;
-            FuelConsumption = 10;
+            FuelConsumption = 10 / 100;
 
         }
 
@@ -29,7 +29,7 @@ namespace CarManufacturer
             : this(make, model, year)
         {
             FuelQuantity = fuelQuantity;
-            FuelConsumption = fuelConsumption;
+            FuelConsumption = fuelConsumption / 100;
         }
 
         public Car(string make, string model, int year, double fuelQuantity, double fuelConsumption, Engine engine, Tire[] tires)
@@ -54,7 +54,7 @@ namespace CarManufacturer
         {
             if (distance * FuelConsumption > FuelQuantity)
             {
-                Console.WriteLine("Not enough fuel to perform this trip!");
+                //Console.WriteLine("Not enough fuel to perform this trip!");
             }
             else
             {
@@ -64,7 +64,14 @@ namespace CarManufacturer
 
         public string WhoAmI()
         {
-            return $"Make: {this.Make}\nModel: {this.Model}\nYear: {this.Year}\nFuel: {this.FuelQuantity:F2}L";
+            StringBuilder output = new StringBuilder();
+            output.AppendLine($"Make: {Make}");
+            output.AppendLine($"Model: {Model}");
+            output.AppendLine($"Year: {Year}");
+            output.AppendLine($"HorsePowers: {Engine.HorsePower}");
+            output.Append($"FuelQuantity: {FuelQuantity}");
+
+            return output.ToString();
         }
     }
 }
