@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarManufacturer", "CarManufacturer\CarManufacturer.csproj", "{46A08D25-7373-4AC2-B9E2-9C189C294610}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarManufacturer", "CarManufacturer\CarManufacturer.csproj", "{46A08D25-7373-4AC2-B9E2-9C189C294610}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DefiningClasses", "DefiningClasses\DefiningClasses.csproj", "{51118555-A552-4366-8953-D6711B163CED}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{46A08D25-7373-4AC2-B9E2-9C189C294610}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{46A08D25-7373-4AC2-B9E2-9C189C294610}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{46A08D25-7373-4AC2-B9E2-9C189C294610}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51118555-A552-4366-8953-D6711B163CED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51118555-A552-4366-8953-D6711B163CED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51118555-A552-4366-8953-D6711B163CED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51118555-A552-4366-8953-D6711B163CED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
