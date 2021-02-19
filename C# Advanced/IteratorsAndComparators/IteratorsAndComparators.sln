@@ -11,17 +11,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ComparableBook", "Comparabl
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookComparator", "BookComparator\BookComparator.csproj", "{C35474B0-ED37-47EA-B0FF-5CF2FEE82999}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListyIterator", "ListyIterator\ListyIterator.csproj", "{4BAB3989-D3A3-4F06-8695-4BB11703E349}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ListyIterator", "ListyIterator\ListyIterator.csproj", "{4BAB3989-D3A3-4F06-8695-4BB11703E349}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Collection", "Collection\Collection.csproj", "{6200ED38-EC40-40A7-B3D7-477A846DA19F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Collection", "Collection\Collection.csproj", "{6200ED38-EC40-40A7-B3D7-477A846DA19F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stack", "Stack\Stack.csproj", "{4CC46405-9FB9-4083-AC85-34A8157B19DF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stack", "Stack\Stack.csproj", "{4CC46405-9FB9-4083-AC85-34A8157B19DF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Froggy", "Froggy\Froggy.csproj", "{6D0AB1E9-3FA0-41AD-AD65-4ABCABC11DAF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Froggy", "Froggy\Froggy.csproj", "{6D0AB1E9-3FA0-41AD-AD65-4ABCABC11DAF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComparingObjects", "ComparingObjects\ComparingObjects.csproj", "{04735DC2-69AC-4F70-8C32-075844B3E789}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ComparingObjects", "ComparingObjects\ComparingObjects.csproj", "{04735DC2-69AC-4F70-8C32-075844B3E789}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EqualityLogic", "EqualityLogic\EqualityLogic.csproj", "{D76AAD94-B85B-4CC1-AC49-5011D54B5DA2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EqualityLogic", "EqualityLogic\EqualityLogic.csproj", "{D76AAD94-B85B-4CC1-AC49-5011D54B5DA2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inventory", "Inventory\Inventory.csproj", "{D2AFEA92-F5EA-4DF7-8D8A-8C17B7685634}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +71,10 @@ Global
 		{D76AAD94-B85B-4CC1-AC49-5011D54B5DA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D76AAD94-B85B-4CC1-AC49-5011D54B5DA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D76AAD94-B85B-4CC1-AC49-5011D54B5DA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2AFEA92-F5EA-4DF7-8D8A-8C17B7685634}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2AFEA92-F5EA-4DF7-8D8A-8C17B7685634}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2AFEA92-F5EA-4DF7-8D8A-8C17B7685634}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2AFEA92-F5EA-4DF7-8D8A-8C17B7685634}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
