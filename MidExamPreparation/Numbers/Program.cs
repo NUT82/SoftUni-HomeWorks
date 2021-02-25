@@ -18,6 +18,7 @@ namespace Numbers
             {
                 Console.WriteLine(string.Join(" ", numbers));
             }
+
         }
     }
 }
