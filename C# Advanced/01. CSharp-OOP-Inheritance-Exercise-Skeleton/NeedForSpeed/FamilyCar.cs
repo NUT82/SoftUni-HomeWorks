@@ -9,7 +9,6 @@ namespace NeedForSpeed
         public FamilyCar(int horsePower, int fuel)
             : base(horsePower, fuel)
         {
-
         }
     }
 }

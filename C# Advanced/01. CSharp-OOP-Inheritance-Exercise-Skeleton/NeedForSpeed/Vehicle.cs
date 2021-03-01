@@ -14,24 +14,11 @@ namespace NeedForSpeed
         public int HorsePower { get; set; }
         public double Fuel { get; set; }
         public double DefaultFuelConsumption { get; set; } = 1.25;
-        public virtual double FuelConsumption => DefaultFuelConsumption / 100;
+        public virtual double FuelConsumption => DefaultFuelConsumption;
 
         public virtual void Drive(double kilometers)
         {
-            if (kilometers * FuelConsumption > Fuel)
-            {
-                Console.WriteLine($"Not enough fuel to drive {kilometers} kilometers!");
-            }
-            else
-            {
-                Fuel -= kilometers * FuelConsumption;
-                Console.WriteLine($"{GetType().Name} drive {kilometers} kilometers!");
-            }
-        }
-
-        public override string ToString()
-        {
-            return $"{GetType().Name} has {Fuel} l. fuel left";
+            Fuel -= kilometers * FuelConsumption;
         }
     }
 }

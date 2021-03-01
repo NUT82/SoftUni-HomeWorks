@@ -6,14 +6,14 @@ namespace Animals
 {
     public class Kitten : Cat
     {
-        public Kitten(string name, int age, string gender = "Female")
+        public Kitten(string name, int age)
             : base(name, age, "Female")
         {
         }
 
-        public override void ProduceSound()
+        public override string ProduceSound()
         {
-            Console.WriteLine("Meow");
+            return "Meow";
         }
     }
 }

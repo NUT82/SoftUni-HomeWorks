@@ -17,14 +17,19 @@ namespace Animals
         public int Age { get; set; }
         public string Gender { get; set; }
 
-        public virtual void ProduceSound()
+        public virtual string ProduceSound()
         {
-
+            return null;
         }
 
         public override string ToString()
         {
-            return $"{Name} {Age} {Gender}";
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine(GetType().Name);
+            sb.AppendLine($"{Name} {Age} {Gender}");
+            sb.AppendLine(ProduceSound());
+
+            return sb.ToString();
         }
     }
 }

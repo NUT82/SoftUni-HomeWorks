@@ -25,22 +25,17 @@ namespace Animals
                 {
                     switch (typeOfAnimal)
                     {
+                        case "Tomcat":
+                            Tomcat tomcat = new Tomcat(name, age);
+                            animals.Add(tomcat);
+                            break;
+                        case "Kitten":
+                            Kitten kitten = new Kitten(name, age);
+                            animals.Add(kitten);
+                            break;
                         case "Cat":
-                            if (name == "Tomcat")
-                            {
-                                Tomcat tomcat = new Tomcat(name, age, gender);
-                                animals.Add(tomcat);
-                            }
-                            else if (name == "Kitten")
-                            {
-                                Kitten kitten = new Kitten(name, age, gender);
-                                animals.Add(kitten);
-                            }
-                            else
-                            {
-                                Cat cat = new Cat(name, age, gender);
-                                animals.Add(cat);
-                            }
+                            Cat cat = new Cat(name, age, gender);
+                            animals.Add(cat);
                             break;
                         case "Dog":
                             Dog dog = new Dog(name, age, gender);
@@ -50,19 +45,13 @@ namespace Animals
                             Frog frog = new Frog(name, age, gender);
                             animals.Add(frog);
                             break;
-                        default:
-                            Console.WriteLine("Invalid input!");
-                            break;
                     }
                 }
                 typeOfAnimal = Console.ReadLine();
             }
-
             foreach (var animal in animals)
             {
-                Console.WriteLine(animal.GetType().Name);
-                Console.WriteLine(animal);
-                animal.ProduceSound();
+                Console.Write(animal);
             }
         }
     }
