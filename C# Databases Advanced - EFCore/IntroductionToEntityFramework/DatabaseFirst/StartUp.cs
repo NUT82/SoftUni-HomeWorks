@@ -1,11 +1,10 @@
-﻿using SoftUni.Data;
+﻿using Microsoft.EntityFrameworkCore;
+using SoftUni.Data;
+using SoftUni.Models;
 using System;
+using System.Globalization;
 using System.Linq;
 using System.Text;
-using SoftUni.Models;
-using Microsoft.EntityFrameworkCore;
-using System.Collections.Generic;
-using System.Globalization;
 
 namespace SoftUni
 {
@@ -14,8 +13,50 @@ namespace SoftUni
         static void Main(string[] args)
         {
             var db = new SoftUniContext();
-            //chose from methods above
-            Console.WriteLine(GetEmployeesByFirstNameStartingWithSa(db));
+            
+            string output = ""; //chose from methods above
+            Console.WriteLine(output); 
+        }
+
+        public static string RemoveTown(SoftUniContext context)
+        {
+            const string townToDelete = "Seattle";
+
+            var addresses = context.Addresses.Where(a => a.Town.Name == townToDelete).ToArray();
+            foreach (var item in addresses)
+            {
+                item.TownId = null;
+            }
+
+            var town = context.Towns.FirstOrDefault(t => t.Name == townToDelete);
+            if (town != null)
+            {
+                context.Towns.Remove(town);
+            }
+
+            context.SaveChanges();
+
+            return $"{addresses.Count()} addresses in {townToDelete} were deleted";
+        }
+
+        public static string DeleteProjectById(SoftUniContext context)
+        {
+            const int projectToDelete = 2;
+            var employeeProjects = context.EmployeesProjects.Where(ep => ep.ProjectId == projectToDelete).ToList();
+            if (employeeProjects.Count > 0)
+            {
+                context.RemoveRange(employeeProjects);
+            }
+            
+            var project = context.Projects.Find(projectToDelete);
+            if (project != null)
+            {
+                context.Remove(project);
+            }
+            
+            context.SaveChanges();
+
+            return string.Join(Environment.NewLine, context.Projects.Select(p => p.Name).Take(10));
         }
 
         public static string GetEmployeesByFirstNameStartingWithSa(SoftUniContext context)
@@ -243,6 +284,5 @@ namespace SoftUni
 
             return stringBuilder.ToString();
         }
-
     }
 }
