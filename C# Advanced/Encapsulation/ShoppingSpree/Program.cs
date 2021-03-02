@@ -10,7 +10,7 @@ namespace ShoppingSpree
         {
             List<Person> people = new List<Person>();
             List<Product> products = new List<Product>();
-            
+
 
             try
             {
@@ -31,24 +31,33 @@ namespace ShoppingSpree
                     Product product = new Product(name, price);
                     products.Add(product);
                 }
+            }
+            catch (ArgumentException ae)
+            {
+                Console.WriteLine(ae.Message);
+                return;
+            }
 
-                string[] command = Console.ReadLine().Split();
-                while (command[0] != "END")
+            string[] command = Console.ReadLine().Split();
+            while (command[0] != "END")
+            {
+                try
                 {
                     string personName = command[0];
                     string productName = command[1];
                     Product product = products.FirstOrDefault(p => p.Name == productName);
                     people.FirstOrDefault(p => p.Name == personName).Buy(product);
-
-                    command = Console.ReadLine().Split();
                 }
+                catch (InvalidOperationException ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+                
+                command = Console.ReadLine().Split();
+            }
 
-                Console.WriteLine(string.Join(Environment.NewLine, people));
-            }
-            catch (ArgumentException ae)
-            {
-                Console.WriteLine(ae.Message);
-            }
+            Console.WriteLine(string.Join(Environment.NewLine, people));
+
         }
     }
 }

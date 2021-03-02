@@ -20,7 +20,7 @@ namespace ShoppingSpree
             get => name;
             private set
             {
-                if (string.IsNullOrEmpty(value))
+                if (string.IsNullOrWhiteSpace(value))
                 {
                     throw new ArgumentException("Name cannot be empty");
                 }
@@ -41,9 +41,5 @@ namespace ShoppingSpree
             }
         }
 
-        public override string ToString()
-        {
-            return Name;
-        }
     }
 }

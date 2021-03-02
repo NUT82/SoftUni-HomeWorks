@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
 using System.Linq;
-using System.Text;
 
 namespace ShoppingSpree
 {
@@ -19,14 +17,12 @@ namespace ShoppingSpree
             bag = new List<Product>();
         }
 
-        public IReadOnlyCollection<Product> Bag => bag.AsReadOnly();
-
         public string Name
         {
             get => name;
             private set
             {
-                if (string.IsNullOrEmpty(value))
+                if (string.IsNullOrWhiteSpace(value))
                 {
                     throw new ArgumentException("Name cannot be empty");
                 }
@@ -46,34 +42,28 @@ namespace ShoppingSpree
                 money = value;
             }
         }
-        
-        internal void Buy(Product product)
+
+        public void Buy(Product product)
         {
-            if (Money >= product.Price)
+            if (product.Price > Money)
             {
-                Money -= product.Price;
-                bag.Add(product);
-                Console.WriteLine($"{Name} bought {product.Name}");
+                throw new InvalidOperationException($"{Name} can't afford {product.Name}");
             }
-            else
-            {
-                Console.WriteLine($"{Name} can't afford {product.Name}");
-            }
+
+            Money -= product.Price;
+            bag.Add(product);
+            Console.WriteLine($"{Name} bought {product.Name}");
+
         }
 
         public override string ToString()
         {
-            StringBuilder sb = new StringBuilder();
-            sb.Append($"{Name} - ");
-            if (Bag.Count == 0)
+            if (bag.Count == 0)
             {
-                sb.AppendLine("Nothing bought");
+                return $"{Name} - Nothing bought";
             }
-            else
-            {
-                sb.AppendJoin(", ", Bag);
-            }
-            return sb.ToString();
+
+            return $"{Name} - {string.Join(", ", bag.Select(b => b.Name))}";
         }
     }
 }
