@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Telephony", "Telephony\Tele
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MilitaryElite", "MilitaryElite\MilitaryElite.csproj", "{2B7BAC51-C346-4729-8A22-4414D38F36AD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SubLists", "SubLists\SubLists.csproj", "{5DC7675A-A378-48C8-897D-CD4C0C24BF82}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{2B7BAC51-C346-4729-8A22-4414D38F36AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2B7BAC51-C346-4729-8A22-4414D38F36AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2B7BAC51-C346-4729-8A22-4414D38F36AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DC7675A-A378-48C8-897D-CD4C0C24BF82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DC7675A-A378-48C8-897D-CD4C0C24BF82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DC7675A-A378-48C8-897D-CD4C0C24BF82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DC7675A-A378-48C8-897D-CD4C0C24BF82}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
