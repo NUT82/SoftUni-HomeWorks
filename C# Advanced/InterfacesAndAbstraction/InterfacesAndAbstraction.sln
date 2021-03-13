@@ -3,13 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DefineAnInterfaceIPerson", "DefineAnInterfaceIPerson\DefineAnInterfaceIPerson.csproj", "{3DD13866-9902-4E4D-9B2B-A7242DA27344}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DefineAnInterfaceIPerson", "DefineAnInterfaceIPerson\DefineAnInterfaceIPerson.csproj", "{3DD13866-9902-4E4D-9B2B-A7242DA27344}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Telephony", "Telephony\Telephony.csproj", "{08431C1F-62A9-4A90-8718-2A7154E61D9E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Telephony", "Telephony\Telephony.csproj", "{08431C1F-62A9-4A90-8718-2A7154E61D9E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MilitaryElite", "MilitaryElite\MilitaryElite.csproj", "{2B7BAC51-C346-4729-8A22-4414D38F36AD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MilitaryElite", "MilitaryElite\MilitaryElite.csproj", "{2B7BAC51-C346-4729-8A22-4414D38F36AD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SubLists", "SubLists\SubLists.csproj", "{5DC7675A-A378-48C8-897D-CD4C0C24BF82}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SubLists", "SubLists\SubLists.csproj", "{5DC7675A-A378-48C8-897D-CD4C0C24BF82}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CollectionHierarchy", "CollectionHierarchy\CollectionHierarchy.csproj", "{6AB74E4E-515A-4A22-B9E1-1E6C7FEEF14B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExplicitInterfaces", "ExplicitInterfaces\ExplicitInterfaces.csproj", "{98E86936-9FE8-4E64-B334-5BF912B36719}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,14 @@ Global
 		{5DC7675A-A378-48C8-897D-CD4C0C24BF82}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5DC7675A-A378-48C8-897D-CD4C0C24BF82}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5DC7675A-A378-48C8-897D-CD4C0C24BF82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6AB74E4E-515A-4A22-B9E1-1E6C7FEEF14B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AB74E4E-515A-4A22-B9E1-1E6C7FEEF14B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AB74E4E-515A-4A22-B9E1-1E6C7FEEF14B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AB74E4E-515A-4A22-B9E1-1E6C7FEEF14B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98E86936-9FE8-4E64-B334-5BF912B36719}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98E86936-9FE8-4E64-B334-5BF912B36719}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98E86936-9FE8-4E64-B334-5BF912B36719}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98E86936-9FE8-4E64-B334-5BF912B36719}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
