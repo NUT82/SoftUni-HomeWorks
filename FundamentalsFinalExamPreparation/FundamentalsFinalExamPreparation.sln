@@ -3,7 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmojiDetector", "EmojiDetector\EmojiDetector.csproj", "{87846871-0FEC-4202-97F2-1EF4927C2D44}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmojiDetector", "EmojiDetector\EmojiDetector.csproj", "{87846871-0FEC-4202-97F2-1EF4927C2D44}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlantDiscovery", "PlantDiscovery\PlantDiscovery.csproj", "{5940B5BC-737F-4066-BAF5-292E0E75A378}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheImitationGame", "TheImitationGame\TheImitationGame.csproj", "{D466782C-F7FF-4321-83F2-3C1A89DD030E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdAstra", "AdAstra\AdAstra.csproj", "{2A79DB2D-A848-44E0-8F28-FCC79835ADCF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThePianist", "ThePianist\ThePianist.csproj", "{D7AB34AE-0E37-4C97-9A94-CE7D4E7AED92}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +23,22 @@ Global
 		{87846871-0FEC-4202-97F2-1EF4927C2D44}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{87846871-0FEC-4202-97F2-1EF4927C2D44}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{87846871-0FEC-4202-97F2-1EF4927C2D44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5940B5BC-737F-4066-BAF5-292E0E75A378}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5940B5BC-737F-4066-BAF5-292E0E75A378}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5940B5BC-737F-4066-BAF5-292E0E75A378}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5940B5BC-737F-4066-BAF5-292E0E75A378}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D466782C-F7FF-4321-83F2-3C1A89DD030E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D466782C-F7FF-4321-83F2-3C1A89DD030E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D466782C-F7FF-4321-83F2-3C1A89DD030E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D466782C-F7FF-4321-83F2-3C1A89DD030E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A79DB2D-A848-44E0-8F28-FCC79835ADCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A79DB2D-A848-44E0-8F28-FCC79835ADCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A79DB2D-A848-44E0-8F28-FCC79835ADCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A79DB2D-A848-44E0-8F28-FCC79835ADCF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7AB34AE-0E37-4C97-9A94-CE7D4E7AED92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7AB34AE-0E37-4C97-9A94-CE7D4E7AED92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7AB34AE-0E37-4C97-9A94-CE7D4E7AED92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7AB34AE-0E37-4C97-9A94-CE7D4E7AED92}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
