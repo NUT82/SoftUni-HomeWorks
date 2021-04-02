@@ -11,11 +11,37 @@ namespace BookShop
         static void Main(string[] args)
         {
             BookShopContext context = new BookShopContext();
-            //string command = Console.ReadLine();
+            string category = Console.ReadLine();
 
             //Console.WriteLine(GetBooksByAgeRestriction(context, command));
             //Console.WriteLine(GetGoldenBooks(context));
-            Console.WriteLine(GetBooksByPrice(context));
+            //Console.WriteLine(GetBooksByPrice(context));
+            //Console.WriteLine(GetBooksNotReleasedIn(context, year));
+            Console.WriteLine(GetBooksByCategory(context, category));
+        }
+
+        public static string GetBooksByCategory(BookShopContext context, string input)
+        {
+            string[] categories = input.ToLower().Split(" ", StringSplitOptions.RemoveEmptyEntries);
+
+            string[] titles = context.Books
+                                    .Where(r => r.BookCategories.Select(c => c.Category.Name.ToLower()).All(e => categories.Contains(e)))
+                                    .Select(b => b.Title)
+                                    .OrderBy(t => t)
+                                    .ToArray();
+            
+            return string.Join(Environment.NewLine, titles);
+        }
+
+        public static string GetBooksNotReleasedIn(BookShopContext context, int year)
+        {
+            string[] titles = context.Books
+                                    .Where(r => r.ReleaseDate.Value.Year != year)
+                                    .OrderBy(i => i.BookId)
+                                    .Select(b => b.Title)
+                                    .ToArray();
+
+            return string.Join(Environment.NewLine, titles);
         }
 
         public static string GetBooksByAgeRestriction(BookShopContext context, string command)

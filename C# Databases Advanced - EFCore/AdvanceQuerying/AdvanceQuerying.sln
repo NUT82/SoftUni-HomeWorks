@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookShopDatabase", "BookShopDatabase\BookShopDatabase.csproj", "{B0662D12-69C2-47F4-BCF7-558C5D7ED843}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgeRestriction", "AgeRestriction\AgeRestriction.csproj", "{436890E1-A1DF-4509-A50B-C9A18BEC1701}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AgeRestriction", "AgeRestriction\AgeRestriction.csproj", "{436890E1-A1DF-4509-A50B-C9A18BEC1701}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Emo", "Emo\Emo.csproj", "{89FA7A71-386D-4B95-BFB5-964D5C20668F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{436890E1-A1DF-4509-A50B-C9A18BEC1701}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{436890E1-A1DF-4509-A50B-C9A18BEC1701}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{436890E1-A1DF-4509-A50B-C9A18BEC1701}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89FA7A71-386D-4B95-BFB5-964D5C20668F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89FA7A71-386D-4B95-BFB5-964D5C20668F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89FA7A71-386D-4B95-BFB5-964D5C20668F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89FA7A71-386D-4B95-BFB5-964D5C20668F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
