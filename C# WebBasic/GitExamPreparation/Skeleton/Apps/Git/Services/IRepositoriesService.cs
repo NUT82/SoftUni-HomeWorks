@@ -7,6 +7,8 @@ namespace Git.Services
     {
         void CreateRepository(string name, string repositoryType, string ownerId);
 
+        public string GetRepositoryName(string id);
+
         ICollection<RepositoryViewModel> GetAllPublicRepositories();
 
         ICollection<RepositoryViewModel> GetUserPrivateRepositories(string ownerId);

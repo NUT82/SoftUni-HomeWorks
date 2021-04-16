@@ -30,9 +30,12 @@ namespace Git.Services
             dbContext.SaveChanges();
         }
 
+        public string GetRepositoryName(string id) => dbContext.Repositories.Where(x => x.Id == id).Select(x => x.Name).FirstOrDefault();
+
         public ICollection<RepositoryViewModel> GetAllPublicRepositories() => dbContext.Repositories.Where(x => x.IsPublic)
                     .Select(r => new RepositoryViewModel
                     {
+                        Id = r.Id,
                         Name = r.Name,
                         CreatedOn = r.CreatedOn,
                         OwnerUsername = r.Owner.Username,
@@ -43,6 +46,7 @@ namespace Git.Services
         public ICollection<RepositoryViewModel> GetUserPrivateRepositories(string ownerId) => dbContext.Repositories.Where(x => !x.IsPublic && x.OwnerId == ownerId)
                     .Select(r => new RepositoryViewModel
                     {
+                        Id = r.Id,
                         Name = r.Name,
                         CreatedOn = r.CreatedOn,
                         OwnerUsername = r.Owner.Username,

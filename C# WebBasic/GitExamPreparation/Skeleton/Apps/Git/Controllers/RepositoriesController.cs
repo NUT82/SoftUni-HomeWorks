@@ -1,8 +1,6 @@
 ﻿using Git.Services;
-using Git.ViewModels.Repositories;
 using SUS.HTTP;
 using SUS.MvcFramework;
-using System.Linq;
 
 namespace Git.Controllers
 {

@@ -27,6 +27,11 @@ namespace Git.Controllers
         [HttpPost]
         public HttpResponse Login(string username, string password)
         {
+            if (IsUserSignedIn())
+            {
+                return Redirect("/");
+            }
+
             var userId = usersService.GetUserId(username, password);
             if (userId == null)
             {
@@ -60,6 +65,11 @@ namespace Git.Controllers
         [HttpPost]
         public HttpResponse Register(string username, string email, string password, string confirmPassword)
         {
+            if (IsUserSignedIn())
+            {
+                return Redirect("/");
+            }
+
             if (string.IsNullOrEmpty(username) || username.Length < 5 || username.Length > 20)
             {
                 return Error("Username must be between 5 and 20 characters!");
