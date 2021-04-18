@@ -1,8 +1,7 @@
-﻿namespace Git
+﻿namespace Dictionary
 {
-    using System.Threading.Tasks;
-
     using SUS.MvcFramework;
+    using System.Threading.Tasks;
 
     public class Program
     {
