@@ -2,7 +2,7 @@
 using CarShop.Services.Users;
 using CarShop.ViewModels.Cars;
 using MyWebServer.Controllers;
-using MyWebServer.Results;
+using MyWebServer.Http;
 using System.Linq;
 
 namespace CarShop.Controllers.Cars
@@ -19,7 +19,7 @@ namespace CarShop.Controllers.Cars
         }
 
         [Authorize]
-        public ActionResult All()
+        public HttpResponse All()
         {
             var model = carsService.GetAllCars(User.Id);
 
@@ -27,7 +27,7 @@ namespace CarShop.Controllers.Cars
         }
 
         [Authorize]
-        public ActionResult Add()
+        public HttpResponse Add()
         {
             if (usersService.IsMechanic(User.Id))
             {
@@ -39,7 +39,7 @@ namespace CarShop.Controllers.Cars
 
         [Authorize]
         [HttpPost]
-        public ActionResult Add(AddCarViewModel viewModel)
+        public HttpResponse Add(AddCarViewModel viewModel)
         {
             if (usersService.IsMechanic(User.Id))
             {

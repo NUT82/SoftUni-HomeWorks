@@ -1,11 +1,11 @@
 ﻿using MyWebServer.Controllers;
-using MyWebServer.Results;
+using MyWebServer.Http;
 
 namespace CarShop.Controllers.Home
 {
     public class HomeController : Controller
     {
-        public ActionResult Index()
+        public HttpResponse Index()
         {
             if (User.IsAuthenticated)
             {

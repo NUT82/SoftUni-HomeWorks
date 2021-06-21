@@ -1,7 +1,7 @@
 ﻿using CarShop.Services.Users;
 using CarShop.ViewModels.Users;
 using MyWebServer.Controllers;
-using MyWebServer.Results;
+using MyWebServer.Http;
 using System.Linq;
 
 namespace CarShop.Controllers.Users
@@ -15,7 +15,7 @@ namespace CarShop.Controllers.Users
             this.usersService = usersService;
         }
 
-        public ActionResult Login()
+        public HttpResponse Login()
         {
             if (User.IsAuthenticated)
             {
@@ -26,7 +26,7 @@ namespace CarShop.Controllers.Users
         }
 
         [HttpPost]
-        public ActionResult Login(LoginViewModel viewModel)
+        public HttpResponse Login(LoginViewModel viewModel)
         {
             if (User.IsAuthenticated)
             {
@@ -45,13 +45,13 @@ namespace CarShop.Controllers.Users
         }
 
         [Authorize]
-        public ActionResult LogOut()
+        public HttpResponse LogOut()
         {
             SignOut();
             return Redirect("/");
         }
 
-        public ActionResult Register()
+        public HttpResponse Register()
         {
             if (User.IsAuthenticated)
             {
@@ -62,7 +62,7 @@ namespace CarShop.Controllers.Users
         }
 
         [HttpPost]
-        public ActionResult Register(RegisterViewModel viewModel)
+        public HttpResponse Register(RegisterViewModel viewModel)
         {
             if (User.IsAuthenticated)
             {

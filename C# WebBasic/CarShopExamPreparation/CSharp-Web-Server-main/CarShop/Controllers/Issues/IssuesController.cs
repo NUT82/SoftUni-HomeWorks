@@ -2,7 +2,7 @@
 using CarShop.Services.Users;
 using CarShop.ViewModels.Issues;
 using MyWebServer.Controllers;
-using MyWebServer.Results;
+using MyWebServer.Http;
 
 namespace CarShop.Controllers.Issues
 {
@@ -18,7 +18,7 @@ namespace CarShop.Controllers.Issues
         }
 
         [Authorize]
-        public ActionResult CarIssues(string carId)
+        public HttpResponse CarIssues(string carId)
         {
             var carIssues = carsService.GetCarIssues(carId);
             carIssues.IsMechanic = usersService.IsMechanic(User.Id);
@@ -37,7 +37,7 @@ namespace CarShop.Controllers.Issues
         }
 
         [Authorize]
-        public ActionResult Add(string carId)
+        public HttpResponse Add(string carId)
         {
             if (usersService.IsMechanic(User.Id) && !carsService.HasUnfixedIssue(carId))
             {
@@ -59,7 +59,7 @@ namespace CarShop.Controllers.Issues
 
         [Authorize]
         [HttpPost]
-        public ActionResult Add(AddIssueViewModel viewModel)
+        public HttpResponse Add(AddIssueViewModel viewModel)
         {
             if (!usersService.IsMechanic(User.Id) && !carsService.IsOwner(viewModel.CarId, User.Id))
             {
@@ -76,7 +76,7 @@ namespace CarShop.Controllers.Issues
         }
 
         [Authorize]
-        public ActionResult Fix(string carId, string issueId)
+        public HttpResponse Fix(string carId, string issueId)
         {
             if (!usersService.IsMechanic(User.Id))
             {
@@ -88,7 +88,7 @@ namespace CarShop.Controllers.Issues
         }
 
         [Authorize]
-        public ActionResult Delete(string carId, string issueId)
+        public HttpResponse Delete(string carId, string issueId)
         {
             if (!usersService.IsMechanic(User.Id) && !carsService.IsOwner(carId, User.Id))
             {
